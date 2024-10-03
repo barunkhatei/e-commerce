@@ -1,0 +1,412 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+
+}
+html{
+    overflow-x:hidden;
+
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    position: fixed; /* Make header fixed */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the header is above other elements */
+    
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+   
+
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    font-family: 'Georgia',  serif;
+    font-style: italic;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 65px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cart-icon i{
+    font-size: 20px;
+    color: #7c71df;
+    margin-top: 14px;
+}
+.cart-icon{
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 45px;
+    background-color: #f8f7fb;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: #7c71df;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+}
+.btn i{
+    font-size: 15px;
+    color: #ffffff;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.btn:hover {
+    background-color: #483d8b;
+}
+/* hide the menu icon by default */
+.menu-icon{
+    display: none;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 140px 20px;
+    background-color:  #15151552 ;
+    backdrop-filter: brightness(0.5);
+    
+}
+
+.hero-section h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.hero-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 630px;
+}
+
+.image-wrapper {
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    margin-right: 70%;
+}
+
+.image-wrapper2{
+    max-width: 700px;
+    width: 100%;
+    position: relative;
+    margin-right: 54%;
+}
+
+.hero-images img {
+    width: 80%;
+    border-radius: 10px;
+}
+.right-content {
+    width: 32%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    position: relative;
+    margin-left: 58%;
+    margin-top: -50%;
+  }
+  
+  .login-form {
+    width: 80%;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .close-icon {
+    position: absolute; /* Position absolute for free placement */
+    top: 10px; /* Distance from the top */
+    left: 10px; /* Distance from the left */
+    font-size: 20px; /* Size of the close icon */
+    color: black; /* Color of the icon */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: color 0.3s; /* Smooth transition for color change */
+    background-color: grey;
+    width: 30px;
+    height: 30px;
+    border-radius: 24px;
+}
+
+.close-icon:hover {
+    color: red; /* Change color on hover */
+}
+  
+ 
+  
+  h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .forgot-password {
+    display: block;
+    text-align: right;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #7a7a7a;
+    font-size: 0.9rem;
+  }
+  
+  .login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #8a5ddf;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  .login-btn a{
+    color: white;
+  }
+
+  .line{
+    position: relative;
+    height: 2px;
+    width: 64%;
+    margin: 30px 0;
+    background-color: #d4d4d4;
+    margin-left: 20%;
+
+}
+.line::before{
+    content: 'OR';
+    position: absolute;
+    top: 50%;
+    right: 40%;
+    transform: translate(-50% ,-50%);
+    background-color: white;
+    color: #232836;
+}
+  
+ /* Social Login Icons */
+.social-login {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 24px;
+    color: white;
+}
+
+.google {
+    background-color: #d5d7d9; /* Google white */
+}
+
+.apple {
+    background-color: black; /* Apple black */
+}
+
+.social-icon i {
+    font-size: 24px; /* Icon size */
+    color: white; /* Icon color */
+}
+
+.social-icon:hover {
+    opacity: 0.8;
+}
+  
+  .create-account {
+    margin-top: 20px;
+  }
+  
+  .create-account a {
+    text-decoration: none;
+    color: #8a5ddf;
+  }
+
+  .fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+
+
+  /* Mobile responsiveness */
+@media (max-width: 768px) {
+    /* Hide the full menu and show the hamburger icon */
+    nav ul {
+     position: fixed;
+     top: 0;
+     right: -100%;
+     width: 80%;
+     height: 100%;
+     background-color: white;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     transition: 0.3s ease;
+     z-index: 999;
+ }
+ 
+ nav ul li {
+     margin: 20px 0;
+ }
+ 
+ /* When the menu is toggled (checkbox checked), show the menu */
+ #menuToggle:checked ~ nav ul {
+     right: 0;
+ }
+ 
+ /* Display the menu icon for mobile */
+ .menu-icon {
+     display: block;
+     cursor: pointer;
+     z-index: 1001;
+ }
+ 
+ .menu-icon i {
+     font-size: 28px;
+     color: #333;
+ }
+ 
+ /* Show only the bars icon by default */
+ #menuToggle:not(:checked) ~ nav .fa-times {
+     display: none;
+ }
+ 
+ /* Show only the close (times) icon when checked */
+ #menuToggle:checked ~ nav .fa-bars {
+     display: none;
+ }
+ 
+ /* Hide the actions section on mobile */
+ .actions {
+     display: none;
+ }
+ 
+ /* Align the cart icon and button in a row */
+    .actions {
+      display: none;
+      gap: 20px;
+      margin-top: 20px;
+      width: 100%;
+      justify-content: space-between;
+    }
+ 
+ #closeIcon {
+    display: none;
+  }  
+  .hero-section{
+    background-color: #e6e6e6;
+  }
+
+  /* Hide all elements except the login form */
+  .hero-section h4,
+  .hero-section h2,
+  .hero-images {
+      display: none; /* Hide these elements on mobile */
+  }
+
+  .right-content {
+      display: flex; /* Ensure the login form is displayed */
+      justify-content: center; /* Center align */
+      align-items: center; /* Align items vertically center */
+      height: 100vh; /* Full viewport height for better layout */
+      padding: 0 20px; /* Add padding for aesthetic */
+      margin: 0; /* Reset margin */
+      width: 100%;
+      margin-top: -215px;
+  }
+
+  .login-form {
+      width: 100%; /* Full width for login form */
+      text-align: center; /* Center text within the form */
+  }
+   .login-form h3{
+    margin-top: 10px;
+   }
+
+  .close-icon {
+      margin-top: 10px;
+  }
+   .create-account p{
+      margin-top: 10px;
+   }
+
+   
+
+  
+}
